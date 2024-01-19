@@ -2,10 +2,14 @@ GET http://localhost:3000/ HTTP/1.1
 
 
 ###
-GET https://cse342-winter24.onrender.com HTTP/1.1
+GET http://localhost:8080/contacts HTTP/1.1
 
-###
-GET https://cse342-winter24.onrender.com/hunterRoute HTTP/1.1
 
-###
-GET https://cse342-winter24.onrender.com/hyrumRoute HTTP/1.1
+### Hyrum
+GET http://localhost:8080/contacts/65a0484ef491dfbb914a814d HTTP/1.1
+
+### Hunter
+GET http://localhost:8080/contacts/65a0485df491dfbb914a814e HTTP/1.1
+
+### Robert
+GET http://localhost:8080/contacts/65a04869f491dfbb914a814f HTTP/1.1

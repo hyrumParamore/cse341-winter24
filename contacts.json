@@ -1,0 +1,25 @@
+{
+    "contact": {
+        "firstName": "Hyrum",
+        "lastName": "Paramore",
+        "email": "hyrumparamore@test.com",
+        "favoriteColor": "Blue",
+        "birthday": "07/15/99"
+      },
+      "contact2": {
+        "firstName": "Hunter",
+        "lastName": "Paramore",
+        "email": "hunterparamore@test.com",
+        "favoriteColor": "Orange",
+        "birthday": "08/07/92"
+      },
+      "contact3": {
+        "firstName": "Robert",
+        "lastName": "Paramore",
+        "email": "robertparamore@test.com",
+        "favoriteColor": "Orange",
+        "birthday": "01/02/67"
+      }
+}
+
+  

@@ -1,11 +1,8 @@
-const routes = require('express').Router();
-const lesson1Controller = require('../controllers/lesson1');
-const baseController = require('../controllers/index')
+const express = require('express');
+const router = express.Router();
 
 
-routes.get('/', baseController.getName);
-routes.get('/hyrumRoute', lesson1Controller.hyrumRoute);
-routes.get('/hunterRoute', lesson1Controller.hunterRoute);
+router.use('/contacts', require('./contacts'))
 
 
-module.exports = routes;
+module.exports = router;
