@@ -5,7 +5,7 @@ GET http://localhost:3000/ HTTP/1.1
 GET http://localhost:8080/contacts HTTP/1.1
 
 
-### Hyrum
+### GET Contact - Hyrum Paramore
 GET http://localhost:8080/contacts/65a0484ef491dfbb914a814d HTTP/1.1
 
 ### Hunter
@@ -14,5 +14,38 @@ GET http://localhost:8080/contacts/65a0485df491dfbb914a814e HTTP/1.1
 ### Robert
 GET http://localhost:8080/contacts/65a04869f491dfbb914a814f HTTP/1.1
 
+### Extra Contact to delete
+GET http://localhost:8080/contacts/65af01deecb3e0ea85e92375 HTTP/1.1
+
 ### Deployed Render Website
 GET https://cse342-winter24.onrender.com/contacts HTTP/1.1
+
+
+### Create Contact and POST it to the Database
+POST http://localhost:8080/contacts HTTP/1.1 content-type: application/json HTTP/1.1
+Content-Type: application/json
+
+{
+"firstName":"Seth", 
+"lastName":"Dustin", 
+"email":"Sethdustin@test.com", 
+"favoriteColor":"Green", 
+"birthday":"10/15/1997"
+}
+
+
+### PUT contact - Currently Updating the contact "Hyrum Paramore"
+PUT http://localhost:8080/contacts/65a0484ef491dfbb914a814d HTTP/1.1
+Content-type: application/json
+
+{
+"firstName":"Hyrum", 
+"lastName":"Paramore", 
+"email":"hyrumparamore@test.com", 
+"favoriteColor":"Blue", 
+"birthday":"07/15/1999"
+}
+
+
+### DELETE Contact 
+DELETE http://localhost:8080/contacts/65af3dd5cfb467be18e2538c HTTP/1.1
