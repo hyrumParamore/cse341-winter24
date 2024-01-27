@@ -4,7 +4,6 @@ GET http://localhost:3000/ HTTP/1.1
 ###
 GET http://localhost:8080/contacts HTTP/1.1
 
-
 ### GET Contact - Hyrum Paramore
 GET http://localhost:8080/contacts/65a0484ef491dfbb914a814d HTTP/1.1
 

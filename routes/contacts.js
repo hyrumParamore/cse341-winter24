@@ -2,14 +2,15 @@ const express = require('express');
 const router = express.Router();
 const contactsController = require('../controllers/contacts');
 
-// Middleware to check if input fields are filled in or not.
-const middleware = require('../middleware/contacts'); 
+
 
 
 // Week 2 - GET Route to retrieve contacts from database.
 router.get('/', contactsController.getAll);
 router.get('/:id', contactsController.getSingle);
 
+// Middleware to check if input fields are filled in or not.
+const middleware = require('../middleware/contacts'); 
 
 // Week 3 - POST Route to create a contact. Also created middleware to check if the inputs are empty or not.
 router.post('/', middleware.checkEmptyKeysMiddleware, contactsController.createContact);
