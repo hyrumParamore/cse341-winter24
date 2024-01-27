@@ -5,7 +5,7 @@ GET http://localhost:3000/ HTTP/1.1
 GET http://localhost:8080/contacts HTTP/1.1
 
 ### GET Contact - Hyrum Paramore
-GET http://localhost:8080/contacts/65a0484ef491dfbb914a814d HTTP/1.1
+GET http://localhost:8080/contacts/65b554554697c7b18ddb6d02 HTTP/1.1
 
 ### Hunter
 GET http://localhost:8080/contacts/65a0485df491dfbb914a814e HTTP/1.1
@@ -13,14 +13,17 @@ GET http://localhost:8080/contacts/65a0485df491dfbb914a814e HTTP/1.1
 ### Robert
 GET http://localhost:8080/contacts/65a04869f491dfbb914a814f HTTP/1.1
 
-
-// PRODUCTION Deploy
 ### Extra Contact to delete
 GET http://localhost:8080/contacts/65af01deecb3e0ea85e92375 HTTP/1.1
 
-### Deployed Render Website
-GET https://cse342-winter24.onrender.com/contacts/65b55116219c98f202de9717 HTTP/1.1
 
+
+// PRODUCTION Deploy
+### GET ALL Contacts - Render
+GET https://cse342-winter24.onrender.com/contacts HTTP/1.1
+
+### GET single Contact (Hyrum) - Render
+GET https://cse342-winter24.onrender.com/contacts/65b554554697c7b18ddb6d02 HTTP/1.1
 
 
 ### Create Contact and POST it to the Database
@@ -61,8 +64,8 @@ Content-Type: application/json
 "birthday":"10/21/1995"
 }
 
-### Render
-PUT https://cse342-winter24.onrender.com/contacts/65b552da219c98f202de9718 HTTP/1.1
+### PUT - Update Contact - Render
+PUT https://cse342-winter24.onrender.com/contacts/65b555674697c7b18ddb6d05 HTTP/1.1
 Content-Type: application/json
 
 {
@@ -79,4 +82,4 @@ Content-Type: application/json
 DELETE http://localhost:8080/contacts/65b54e8b239ad52620630b8f HTTP/1.1
 
 ### DELETE Render
-DELETE https://cse342-winter24.onrender.com/contacts/65b552da219c98f202de9718 HTTP/1.1
+DELETE https://cse342-winter24.onrender.com/contacts/65b555674697c7b18ddb6d05 HTTP/1.1
